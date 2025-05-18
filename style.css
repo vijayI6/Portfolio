@@ -277,7 +277,7 @@ h1 {
     margin: 50px;
 }
 
-Consider adding a hamburger menu for mobile screens .project.card {
+.project.card {
     display: inline-block;
     width: 500px;
     height: 340px;
@@ -463,6 +463,8 @@ Consider adding a hamburger menu for mobile screens .project.card {
 .hamburger {
     display: none;
 }
+
+
 
 /* For Mobile Devices */
 @media only screen and (max-width: 600px) {
