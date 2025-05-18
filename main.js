@@ -8,3 +8,8 @@ function opentab(tabId) {
     document.getElementById(tabId).classList.add('active-tab');
     event.currentTarget.classList.add('active-tab');
 }
+
+function toggleMenu() {
+    const menu = document.querySelector(".nav-right");
+    menu.classList.toggle("active");
+}

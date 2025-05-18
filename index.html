@@ -12,20 +12,21 @@
 <body>
     <div class="navbar">
 
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <div class="nav-left">
             <h1 class="name"><span id="letter">V</span>ijay.</h1>
         </div>
 
         <div class="nav-right">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#home-div">Home</a>
+            <a href="#about-div">About</a>
+            <a href="#service-div">Services</a>
+            <a href="#project-div">Projects</a>
+            <a href="#contact-div">Contact</a>
         </div>
     </div>
 
-    <div class="home">
+    <div class="home" id="home-div">
 
         <div class="home-container">
 
@@ -50,7 +51,7 @@
 
     <!-- ----------- About div ------------->
 
-    <div class="about">
+    <div class="about" id="about-div">
 
         <div class="about-container">
 
@@ -126,7 +127,7 @@
 
     <!-- ----------- Services div ------------->
 
-    <div class="services">
+    <div class="services" id="service-div">
 
         <div class="service-text">
             <h1>My Services</h1>
@@ -159,7 +160,7 @@
 
     <!-- ----------- Project div ------------->
 
-    <div class="project">
+    <div class="project" id="project-div">
 
         <div class="project-text">
             <h1>My Projects</h1>
@@ -188,11 +189,18 @@
             <img src="assets/qrCode.png" alt="image">
             <a href="" class="project-btn" target="_blank">View</a>
         </div>
+
+        <div class="project-card">
+            <h2>Comming Soon</h2>
+            <img src="assets/coming-soon .png" alt="image">
+            <a href="" class="project-btn" target="_blank">View</a>
+        </div>
+        
     </div>
 
     <!-- ----------- Contact div ------------->
 
-    <div class="contact">
+    <div class="contact" id="contact-div">
         <div class="contact-text">
             <h1>Contact Me</h1>
         </div>

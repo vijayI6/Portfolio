@@ -14,10 +14,17 @@ body {
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #beb8b821;
+    backdrop-filter: blur(20px);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+
 }
 
 .nav-left {
@@ -106,6 +113,7 @@ a:hover {
     color: #f50029;
     font-family: "Mogra", system-ui;
     font-weight: 400;
+    scroll-behavior: smooth;
     font-style: normal;
 }
 
@@ -269,7 +277,7 @@ h1 {
     margin: 50px;
 }
 
-.project.card {
+Consider adding a hamburger menu for mobile screens .project.card {
     display: inline-block;
     width: 500px;
     height: 340px;
@@ -281,8 +289,8 @@ h1 {
 .project-card {
     position: relative;
     display: inline-block;
-    width: 250px;
-    height: 340px;
+    width: 200px;
+    height: 300px;
     padding: 20px;
     margin: 50px;
     background-color: #262626;
@@ -432,45 +440,101 @@ h1 {
     font-size: 22px;
 }
 
+#home-div {
+    scroll-margin-top: 110px;
+}
+
+#about-div {
+    scroll-margin-top: 100px;
+}
+
+#service-div {
+    scroll-margin-top: 140px;
+}
+
+#project-div {
+    scroll-margin-top: 140px;
+}
+
+#contact-div {
+    scroll-margin-top: 100px;
+}
+
+.hamburger {
+    display: none;
+}
 
 /* For Mobile Devices */
-
 @media only screen and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
     h1 {
-        font-size: 30px;
-        font-weight: 1000;
+        font-size: 28px;
+        font-weight: 800;
     }
 
     .navbar {
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        padding: 10px 0;
+        width: 100%;
     }
 
     .nav-right {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-right.active {
+        display: flex;
+    }
+
+    .nav-right a {
+        padding: 8px 0;
+        width: 100%;
+        font-size: 18px;
+        border-bottom: 1px solid #444;
     }
 
     .home-container {
         flex-direction: column;
-        padding: 20px;
-        gap: 30px;
+        padding: 10px;
+        gap: 20px;
     }
 
     .text {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 26px;
         text-align: left;
     }
 
     .image {
-        width: 500px;
+        width: 100%;
         height: auto;
     }
 
     .about-container {
         flex-direction: column;
-        margin: 20px;
+        margin: 10px;
     }
 
     .column-1 img {
@@ -479,19 +543,20 @@ h1 {
     }
 
     .column-2 h1 {
-        font-size: 36px;
-        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 8px;
     }
 
     .about-text {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 26px;
         text-align: left;
     }
 
     .titles {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
 
     #experience,
@@ -501,7 +566,7 @@ h1 {
 
     .service-card,
     .project-card {
-        width: 80%;
+        width: 82%;
         height: auto;
         margin: 40px;
     }
@@ -585,12 +650,12 @@ h1 {
     }
 
     .service-card {
-        width: 45%;
+        width: 55%;
         margin-right: 40px;
     }
 
     .project-card {
-        width: 26%;
+        width: 40%;
         margin-right: 40px;
     }
 
@@ -612,7 +677,6 @@ h1 {
 
 
 /* For Desktop Devices */
-
 @media only screen and (min-width: 1025px) {
 
     .navbar {
