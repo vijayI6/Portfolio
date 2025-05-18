@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="nav-left">
+            <h1 class="name"><span id="letter">V</span>ijay.</h1>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="home">
+
+        <div class="home-container">
+
+            <div class="text">
+
+                <h3> Hi, It's Me</h3>
+                <h1><span class="letter head">Rayalavarapu Sai Vijay</span></h1>
+                <h3> And I'm a <span class="roles"></span></h3>
+                <p>
+                    Passionate developer skilled in creating responsive web applications using the MERN stack.
+                    <br>
+                    Experienced in Python for data analysis and building interactive dashboards with Power BI.
+                    <br>
+                    Eager to contribute to innovative teams and continuously enhance my skills.
+                </p>
+                <a href="assets/Resume.pdf" class="btn" download="Sai_Vijay_Resume.pdf">Download Resume</a>
+            </div>
+
+            <img src="assets/dp.png" alt="image" class="image">
+        </div>
+    </div>
+
+    <!-- ----------- About div ------------->
+
+    <div class="about">
+
+        <div class="about-container">
+
+            <div class="column-1">
+                <img src="assets/user.png" alt="user">
+            </div>
+
+            <div class="column-2">
+                <h1>About Me</h1>
+                <p class="about-text">I'm a passionate and self-driven developer with a strong foundation in full-stack
+                    web development and
+                    data analysis.
+                    I specialize in the MERN stack (MongoDB, Express.js, React.js, and Node.js) and enjoy building
+                    responsive, user-friendly web applications that solve real-world problems.
+                    Alongside web development, I have a strong interest in Python programming, especially for data
+                    analysis. I work with libraries like pandas, NumPy, and Matplotlib to extract insights and create
+                    visualizations.
+                    I'm also skilled in using Power BI to design interactive dashboards that present data clearly and
+                    effectively.</p>
+
+                <div class="titles">
+                    <p class="skill-set" onclick="opentab('skills')">Skills</p>
+                    <p class="skill-set" onclick="opentab('experience')">Experience</p>
+                    <p class="skill-set" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="skill-content" id="skills">
+                    <ul>
+                        <li>Python & DSA</li>
+                        <li>MERN Stack</li>
+                        <li>HTML, CSS & JS</li>
+                        <li>Numpy</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>SeaBorn</li>
+                        <li>PowerBI</li>
+                        <li>MySQL</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+
+                <div class="skill-content" id="experience">
+                    <ul>
+                        <li class="main">Web Development Intern</li>
+                        <li>CSEDGE</li>
+                        <li>May 2024 - June 2024</li>
+                    </ul>
+                    <ul>
+                        <li>Full-Stack Developer Intern</li>
+                        <li>Edunet Foundation</li>
+                        <li>may 2025 - Current</li>
+                    </ul>
+                </div>
+
+                <div class="skill-content" id="education">
+                    <ul>
+                        <li class="main">B.Tech</li>
+                        <li>Ramachandra College of Engineering</li>
+                        <li>Computer Science and Engineering</li>
+                        <li>2022-2026 with 7.7 CGPA</li>
+                    </ul>
+                    <ul>
+                        <li class="main">Intermediate</li>
+                        <li>Sri Chaitanaya Junior College</li>
+                        <li>Maths, Physics, Chemistry</li>
+                        <li>2020-2022 with 803/1000</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ----------- Services div ------------->
+
+    <div class="services">
+
+        <div class="service-text">
+            <h1>My Services</h1>
+        </div>
+
+        <div class="service-card">
+            <h2>Full-Stack Development</h2>
+            <p>Build modern, responsive web applications from frontend to backend using technologies like React,
+                Node.js, Express.js, and MongoDB. I manage everything from UI/UX design to backend logic, database
+                integration, and deployment.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h2>Data Analysis</h2>
+            <p>Analyze, visualize, and interpret complex datasets using Python, NumPy, pandas, Matplotlib, and Power BI.
+                I deliver actionable insights through data cleaning, exploratory data analysis (EDA), and the creation
+                of interactive dashboards.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h2>Problem solving</h2>
+            <p>Develop efficient and optimized Python scripts to automate tasks, process data, and solve algorithmic
+                challenges. Experienced in crafting scalable solutions for real-world problems using clean and modular
+                code.
+            </p>
+        </div>
+    </div>
+
+    <!-- ----------- Project div ------------->
+
+    <div class="project">
+
+        <div class="project-text">
+            <h1>My Projects</h1>
+        </div>
+
+        <div class="project-card">
+            <h2> Tic-Tac-Toe Game</h2>
+            <img src="assets/tic-tac-toe.png" alt="image">
+            <a href="https://vijayi6.github.io/Tic-Tac-Toe/" class="project-btn" target="_blank">View</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Color-Picker</h2>
+            <img src="assets/color-wheel.png" alt="image">
+            <a href="https://vijayi6.github.io/Color-Picker/" class="project-btn" target="_blank">View</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Text-to-Speech</h2>
+            <img src="assets/text-to-speech.png" alt="image">
+            <a href="https://vijayi6.github.io/Text-To-Speech/" class="project-btn" target="_blank">View</a>
+        </div>
+
+        <div class="project-card">
+            <h2>QR-Code Generator</h2>
+            <img src="assets/qrCode.png" alt="image">
+            <a href="" class="project-btn" target="_blank">View</a>
+        </div>
+    </div>
+
+    <!-- ----------- Contact div ------------->
+
+    <div class="contact">
+        <div class="contact-text">
+            <h1>Contact Me</h1>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-details">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saivijay.rs@gmail.com" target="_blank">
+                    <img src="assets/gmail.png" alt="gmail">
+                </a>
+                <a href="https://github.com/vijayI6" target="_blank"><img src="assets/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/rs-vijay" target="_blank"><img src="assets/linkedin.png"
+                        alt="linkedin"></a>
+                <a href="https://instagram.com/vizai_43" target="_blank"><img src="assets/instagram.png"
+                        alt="instagram"></a>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="uname" placeholder="Your Name" id="uname" required>
+                    <input type="email" name="mailid" placeholder="abc@gmail.com" id="email" required>
+                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>&copy 2025 vijayI6. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        var typed = new Typed('.roles', {
+            strings: ['MERN Stack Developer', 'Data Analyst', 'Python Programmer'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 1500,
+            loop: true
+        });
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
