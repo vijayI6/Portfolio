@@ -236,11 +236,11 @@ h1 {
 
 .service-card {
     display: inline-block;
-    width: 500px;
+    width: 25%;
     height: 340px;
     padding: 30px;
     margin: 50px;
-    column-gap: 50px;
+    column-gap: 10px;
     background-color: #262626;
     align-content: center;
     border-radius: 15px;
@@ -289,7 +289,7 @@ h1 {
 .project-card {
     position: relative;
     display: inline-block;
-    width: 200px;
+    width: 17%;
     height: 300px;
     padding: 20px;
     margin: 50px;
@@ -330,7 +330,7 @@ h1 {
 
 .project-card img {
     padding: 20px;
-    height: 200px;
+    height: 160px;
     width: auto;
 }
 
@@ -726,10 +726,10 @@ h1 {
         gap: 250px;
     }
 
-    .project-card {
+    .service-card .project-card {
         font-size: 25px;
-        width: 20%;
-        margin-right: 40px;
+        width: 15%;
+        margin-right: 10px;
     }
 
     .contact-container {
