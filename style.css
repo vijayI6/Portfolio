@@ -21,7 +21,7 @@ body {
     z-index: 1000;
     background-color: #beb8b821;
     backdrop-filter: blur(20px);
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -133,11 +133,12 @@ a:hover {
 }
 
 .column-1 img {
-    height: 615px;
-    width: 90%;
+    max-width: 95%;
+    height: 690px;
     border-radius: 15px;
-    box-shadow: 0 0px 14px #fffafa;
+    box-shadow: 0 0 14px #fffafa;
 }
+
 
 .column-2,
 h1 {
@@ -145,7 +146,7 @@ h1 {
     color: #00a2ff;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 500;
     padding-bottom: 12px;
 }
 
@@ -247,7 +248,7 @@ h1 {
 }
 
 .service-card:hover {
-    transform: translateY(-25px);
+    transform: translateY(-15px);
     box-shadow: 0 0px 14px #fffafa;
 }
 
@@ -270,6 +271,10 @@ h1 {
 
 
 /*------------- Project ------------- */
+
+.project {
+    margin-top: 220px;
+}
 
 .project-text {
     margin: 50px;
@@ -466,7 +471,6 @@ h1 {
 
 /* For Mobile Devices */
 @media only screen and (max-width: 600px) {
-
     body {
         padding: 10px;
         overflow-x: hidden;
@@ -484,36 +488,10 @@ h1 {
         padding: 10px 15px;
     }
 
-    .hamburger {
-        display: flex;
-        justify-content: flex-end;
-        align-items: end;
-        font-size: 28px;
-        color: white;
-        cursor: pointer;
-        padding: 10px 0;
-        width: 100%;
-    }
-
     .nav-right {
         display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        gap: 10px;
-        margin-top: 10px;
     }
 
-    .nav-right.active {
-        display: flex;
-    }
-
-    .nav-right a {
-        padding: 8px 0;
-        width: 100%;
-        font-size: 18px;
-        border-bottom: 1px solid #444;
-    }
 
     .home-container {
         flex-direction: column;
@@ -600,6 +578,11 @@ h1 {
 
 /*For Tablets Devices */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 85px;
+    }
 
     .home-container {
         flex-direction: column;
@@ -682,7 +665,7 @@ h1 {
     .navbar {
         flex-direction: row;
         justify-content: space-between;
-        height: 100px;
+        height: 95px;
     }
 
     .home-container {
@@ -726,7 +709,7 @@ h1 {
 
     .service-card {
         font-size: 22px;
-        width: 25%;
+        width: 29%;
         margin-right: 10px;
     }
 
