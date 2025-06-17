@@ -264,7 +264,7 @@ h1 {
 
 .service-card p {
     font-family: 'poppins', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     text-align: left;
     line-height: 30px;
 }
@@ -540,6 +540,10 @@ h1 {
     #experience,
     #education {
         padding-left: 0;
+    }
+
+    .service-card {
+        font-size: 18px;
     }
 
     .service-card,
